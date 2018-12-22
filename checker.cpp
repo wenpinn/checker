@@ -1,4 +1,4 @@
-// checker.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// checker.cpp : å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 #include "stdafx.h"
@@ -50,13 +50,19 @@ void showBoard()
 	int Oy=100;
 	int r=20;
 	int i,j;
+	int len;
+	TCHAR s[1024];
 	for(i=0;i<N;i++)
 		for(j=0;j<N;j++)
 		{
 			int x=Ox+(2*i+j)*dx;
 			int y=Oy+j*dy;
 			if(A[i][j]>0)
+			{
+				len=wsprintf(s,L"%d,%d",i,j);
 				Ellipse(hdc,x-r,y-r,x+r,y+r);
+				TextOut(hdc,x-r,y-r,s,len);
+			}
 
 		}
 }

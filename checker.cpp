@@ -1,4 +1,4 @@
-// checker.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// checker.cpp : å®šç¾©ä¸»æŽ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»žã€‚
 //
 
 #include "stdafx.h"
@@ -13,12 +13,11 @@ void showBoard();
 void go();
 void main()
 {
-
+	//1052003
 	readboard(A);
 	showBoard();
 	go();
 }
-
 void readboard(int A[N][N])
 {
 	ifstream file;
@@ -30,7 +29,6 @@ void readboard(int A[N][N])
 			file>>A[i][j];
 		}
 		file.close();
-
 }
 void go()
 {
@@ -57,6 +55,5 @@ void showBoard()
 			int y=Oy+j*dy;
 			if(A[i][j]>0)
 				Ellipse(hdc,x-r,y-r,x+r,y+r);
-
 		}
 }

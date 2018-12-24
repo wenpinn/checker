@@ -1,4 +1,4 @@
-// checker.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// checker.cpp : å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 #include "stdafx.h"
@@ -8,8 +8,8 @@
 using namespace std;
 const int N=17;
 int A[N][N];
-void readboard(int A[N][N]);
-void showBoard();
+void readboard(int A[N][N]);   //è®€å–æ£‹ç›¤
+void showBoard();              //é¡¯ç¤ºæ£‹ç›¤
 void go();
 void main()
 {
@@ -21,8 +21,8 @@ void main()
 
 void readboard(int A[N][N])
 {
-	ifstream file;
-	file.open("board.txt");
+	ifstream file;           //è®€file
+	file.open("board.txt");  //é–‹board.txt
 	int i,j;
 	for(i=0;i<N;i++)
 		for(j=0;j<N;j++)

@@ -20,15 +20,15 @@ void main()
 }
 void readboard(int A[N][N])
 {
-	ifstream file;
-	file.open("board.txt");
+	ifstream file;  
+	file.open("board.txt");   //開啟檔案
 	int i,j;
-	for(i=0;i<N;i++)
-		for(j=0;j<N;j++)
+	for(i=0;i<N;i++)  //i是行
+		for(j=0;j<N;j++) //j是列
 		{
 			file>>A[i][j];
 		}
-		file.close();
+		file.close();   //檔案關掉
 }
 void go()
 {

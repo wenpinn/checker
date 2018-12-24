@@ -1,4 +1,4 @@
-// checker.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// checker.cpp : å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 #include "stdafx.h"
@@ -21,6 +21,7 @@ void main()
 
 void readboard(int A[N][N])
 {
+	//å°‡è¨˜äº‹æœ¬ä¸­çš„æ£‹ç›¤æ”¾å…¥é™£åˆ—ä¸­çš„å°æ‡‰ä½ç½®
 	ifstream file;
 	file.open("board.txt");
 	int i,j;

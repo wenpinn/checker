@@ -5,15 +5,16 @@
 #include <iostream>
 #include <fstream>
 #include <Windows.h>
+#define one 100;
 using namespace std;
 const int N=17;
-int A[N][N];
+int A[N][N]; //二維陣列
 void readboard(int A[N][N]);
 void showBoard();
 void go();
 void main()
 {
-	//1052003
+	
 	readboard(A);
 	showBoard();
 	go();
@@ -44,8 +45,8 @@ void showBoard()
 	double l=50;
 	double dx=l*cos(60*3.14159/180.);
 	double dy=l*sin(60*3.14159/180.);
-	int Ox=100;
-	int Oy=100;
+	int Ox=one;
+	int Oy=one;
 	int r=20;
 	int i,j;
 	for(i=0;i<N;i++)

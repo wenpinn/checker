@@ -41,9 +41,8 @@ void showBoard()
 	HWND hwnd=CreateWindow(L"static", L"wp",WS_VISIBLE|WS_BORDER|WS_OVERLAPPED,10,10,1024,768,0,0,0,0);
 	ShowWindow(hwnd,SW_SHOW);
 	HDC hdc=GetDC(hwnd);
-	double l=50;
-	double dx=l*cos(60*3.14159/180.);
-	double dy=l*sin(60*3.14159/180.);
+	double dx=50*cos(60*3.14159/180.);
+	double dy=50*sin(60*3.14159/180.);
 	int Ox=100;
 	int Oy=100;
 	int r=20;

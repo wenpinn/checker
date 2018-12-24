@@ -6,8 +6,8 @@
 #include <fstream>
 #include <Windows.h>
 using namespace std;
-const int N=17;
-int A[N][N];
+const int N=17;  //宣告N=17
+int A[N][N];     //宣告一個陣列
 void readboard(int A[N][N]);
 void showBoard();
 void go();

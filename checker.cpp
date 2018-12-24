@@ -1,12 +1,13 @@
-// checker.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// checker.cpp : å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 #include "stdafx.h"
 #include <iostream>
 #include <fstream>
+#include <cmath>
 #include <Windows.h>
+#define N 17
 using namespace std;
-const int N=17;
 int A[N][N];
 void readboard(int A[N][N]);
 void showBoard();

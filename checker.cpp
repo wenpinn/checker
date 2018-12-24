@@ -4,9 +4,10 @@
 #include "stdafx.h"
 #include <iostream>
 #include <fstream>
+#include <cmath>
 #include <Windows.h>
+#define N 17
 using namespace std;
-const int N=17;
 int A[N][N];
 void readboard(int A[N][N]);
 void showBoard();

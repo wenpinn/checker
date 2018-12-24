@@ -1,4 +1,4 @@
-// checker.cpp : �w�q�D���x���ε{�����i�J�I�C
+// checker.cpp : 定義主控台應用程式的進入點。
 //
 
 #include "stdafx.h"
@@ -7,22 +7,22 @@
 #include <Windows.h>
 using namespace std;
 const int N=17;
-int A[N][N];
+int A[N][N];//二維陣列
 void readboard(int A[N][N]);
 void showBoard();
 void go();
 void main()
 {
 
-	readboard(A);
-	showBoard();
+	readboard(A);//讀取棋盤
+	showBoard();//顯示棋盤
 	go();
 }
 
 void readboard(int A[N][N])
 {
 	ifstream file;
-	file.open("board.txt");
+	file.open("board.txt"); //打開棋盤的文字檔
 	int i,j;
 	for(i=0;i<N;i++)
 		for(j=0;j<N;j++)
@@ -56,7 +56,7 @@ void showBoard()
 			int x=Ox+(2*i+j)*dx;
 			int y=Oy+j*dy;
 			if(A[i][j]>0)
-				Ellipse(hdc,x-r,y-r,x+r,y+r);
+				Ellipse(hdc,x-r,y-r,x+r,y+r);//棋子的路徑
 
 		}
 }

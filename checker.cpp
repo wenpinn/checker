@@ -20,6 +20,7 @@ void main()
 }
 void readboard(int A[N][N])
 {
+	//將記事本中的棋盤放入陣列中的對應位置
 	ifstream file;
 	file.open("board.txt");
 	int i,j;

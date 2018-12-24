@@ -1,2 +1,2 @@
-# checker
-for class demo
+For demk
+c++

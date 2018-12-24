@@ -16,7 +16,7 @@ void main()
 	//1052028
 	readboard(A);//讀取棋盤
 	showBoard();//顯示棋盤
-	go();
+	go();//下棋
 }
 void readboard(int A[N][N])
 {

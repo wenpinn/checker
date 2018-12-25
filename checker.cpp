@@ -13,22 +13,22 @@ void showBoard();
 void go();
 void main()
 {
-	//1052003
+	//1072002
 	readboard(A);
 	showBoard();
-	go();
+	go()
 }
 void readboard(int A[N][N])
 {
 	ifstream file;
-	file.open("board.txt");
+	file.open("board.txt");//讀檔
 	int i,j;
 	for(i=0;i<N;i++)
 		for(j=0;j<N;j++)
 		{
 			file>>A[i][j];
 		}
-		file.close();
+		file.close();//檔案關閉
 }
 void go()
 {
@@ -36,7 +36,7 @@ void go()
 	cin>>A;
 
 }
-void showBoard()
+void showBoard()//繪製棋盤
 {
 	HWND hwnd=CreateWindow(L"static", L"wp",WS_VISIBLE|WS_BORDER|WS_OVERLAPPED,10,10,1024,768,0,0,0,0);
 	ShowWindow(hwnd,SW_SHOW);

@@ -11,7 +11,7 @@ void showBoard();
 void go();
 void main()
 {
-	//10
+	//1072012
 	readboard(A);
 	showBoard();
 	readboard(A);///讀取棋盤
